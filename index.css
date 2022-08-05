@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Comic Neue', cursive;
+    background-color: #0099ff;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    line-height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0099ff;
+}
+
+#nameClass{
+    color: #fff;
+}
+
+nav{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuOptions{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.home{
+    background-image: url(img/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title{
+    color: #fff;
+    font-size: 80px;
+    padding: 40px;
+    border: 3px solid #fff;
+    margin-bottom: 20px;
+}
+
+.myName{
+    color: #fff;
+    font-size: 32px;
+}
+
+.go{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    border: 2px solid #0099ff;
+    color: #0099ff;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px auto;
+    transition: all 0.5s;
+}
+
+.go:hover{
+    border: none;
+    background-color: #0099ff;
+    color: #fff;
+    font-size: 50px;
+    box-shadow: 20px 20px 20px #000;
+}
+
+.nodo, .linkedList{
+    width: 1200px;
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.subtitle{
+    color: #0099ff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.descNodo, .descLink{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.descriptionNodo{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+li b{
+    color: #0099ff;
+}
+
+.nodoImg{
+    width: 1100px;
+    height: 450px;
+    border: 4px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+}
+.nodoImg div{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    border-radius: 40px;
+}
+
+.nodoImg div p{
+    font-size: 40px;
+}
+
+.nodoImg div:hover{
+    position: relative;
+    animation: saltito 0.5s infinite linear;
+}
+
+.c{
+    width: 600px;
+    height: 400px;
+    background-color: #4D80E4;
+}
+
+.p{
+    width: 400px;
+    height: 400px;
+    background-color: #2E279D;
+}
+
+@keyframes saltito {
+    
+    0%{
+        top: 0;
+    }
+
+    25%{
+        top: -10px;
+    }
+
+    50%{
+        top: 0;
+    }
+
+    75%{
+        top: 10px;
+    }
+
+    100%{
+        top: 0;
+    }
+
+}
+
+.subtitleIndicador{
+    color: #0099ff;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+img{
+    margin: 20px auto;
+}
+
+table, th, td{
+    border: 2px solid #0099ff;
+}
+
+table{
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
+
+th{
+    background-color: #0099ff;
+    color: #fff;
+}
